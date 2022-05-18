@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@200;400&display=swap');
 
 /*
 	Story by HTML5 UP
@@ -4255,7 +4256,7 @@ input, select, textarea {
 /* Banner (style5) */
 
 	.banner.style5 {
-		padding: 7rem 7rem 5rem 7rem ;
+		padding: 3rem; /* orgin 7rem 7rem 5rem 7rem */
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -4265,19 +4266,19 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		flex-direction: column;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: space-between;
+		-moz-justify-content: flex-start;
+		-webkit-justify-content: flex-start;
+		-ms-justify-content: flex-start;
+		justify-content: flex-start;
 		background-color: inherit;
-		position: relative;
+		/* position: relative; */
 		text-align: center;
 		overflow-x: hidden;
 	}
 
 		.banner.style5 .content {
 			position: relative;
-			width: 40rem;
+			width: 100%;  /* orig 40rem */
 			max-width: 100%;
 			margin-bottom: 2rem;
 			z-index: 1;
@@ -4298,7 +4299,7 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			border-radius: 0;
-			opacity: 0.5;
+			opacity: 0.85;  /* orgin .5 */
 		}
 
 			.banner.style5 .image img {
@@ -4322,7 +4323,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.banner.style5 {
-				padding: 5rem 5rem 3rem 5rem ;
+				padding: 3rem;
 			}
 
 		}
@@ -8603,7 +8604,51 @@ input, select, textarea {
 				box-shadow: none !important;
 			}
 
+		
+			/* My adjustments to template */
+
+
+
+		header {
+			width: 100%;
+			/* margin: 0 0 0 2em; */
+		}
+
+		.nav {
+			width: 40%;
+		}
+
 		.nav-links {
 			display: flex;
 			justify-content: space-between;
+			font-size: 1.25em;
+			margin: 0;
+			padding: 0;
+		}
+
+		.nav-links li {
+			list-style: none;
+			padding: 0;
+		}
+
+		.nav-links a {
+			text-decoration: none;
+		}
+
+		.landing-name h1 {
+			letter-spacing: .15em;
+			font-size: 6vw;
+			max-width: 55%;
+			margin-top: 5rem;
+			font-family: "Anybody";
+			/* font-weight: 400; */
+		}
+
+
+		@media screen and (max-width: 1280px) {
+
+			.landing-name h1 {
+				font-size: 5vw;
+			}
+
 		}
