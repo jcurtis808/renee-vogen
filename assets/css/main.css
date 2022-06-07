@@ -4335,7 +4335,7 @@ input, select, textarea {
 				-moz-object-position: center;
 				-webkit-object-position: center;
 				-ms-object-position: center;
-				object-position: center;
+				object-position: 70%;
 				display: block;
 				position: absolute;
 				top: 0;
@@ -4367,6 +4367,15 @@ input, select, textarea {
 				padding: 3.75rem 3rem 1.75rem 3rem ;
 			}
 
+			.mobile-landing-pic {
+				visibility: visible !important;
+			}
+
+			.desktop-landing-pic {
+				visibility: hidden;
+			}
+
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4375,7 +4384,13 @@ input, select, textarea {
 				padding: 1rem 2rem 0.5rem 2rem ;
 			}
 
+			.mobile-landing-pic {
+				visibility: visible !important;
+			}
 
+			.desktop-landing-pic {
+				visibility: hidden;
+			}
 
 		}
 
@@ -8671,6 +8686,10 @@ input, select, textarea {
 			font-family: "Rubik";
 			color: lightyellow;
 			font-weight: 300;
+		}
+
+		.mobile-landing-pic {
+			visibility: hidden;
 		}
 
 		#r2 {
