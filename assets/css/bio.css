@@ -3485,7 +3485,7 @@ input, select, textarea {
 	}
 
 		.banner.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 2rem ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
@@ -3514,6 +3514,9 @@ input, select, textarea {
 			flex-shrink: 0;
 			border-radius: 0;
 			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 
 			.banner.style1 .image img {
@@ -3524,20 +3527,21 @@ input, select, textarea {
 				-moz-object-position: center;
 				-webkit-object-position: center;
 				-ms-object-position: center;
-				object-position: center;
+				object-position: top;
 				display: block;
-				position: absolute;
+				/* position: absolute;
 				top: 0;
-				left: 0;
-				width: 100%;
+				right: 0; */
+				width: 75%;
 				height: 100%;
 				border-radius: 0;
+				padding: 2rem;
 			}
 
 		@media screen and (max-width: 1680px) {
 
 			.banner.style1 .content {
-				padding: 5rem 5rem 3rem 5rem ;
+				padding: 2rem 0 2rem 4rem ;
 			}
 
 		}
@@ -3545,7 +3549,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.banner.style1 .content {
-				padding: 4rem 4rem 2rem 4rem ;
+				padding: 2rem 0 2rem 2rem ;
 			}
 
 		}
@@ -3553,7 +3557,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.banner.style1 .content {
-				padding: 3.75rem 3rem 1.75rem 3rem ;
+				padding: 2rem 2rem 2rem 2rem ;
 			}
 
 		}
@@ -3561,7 +3565,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.banner.style1 .content {
-				padding: 2.5rem 2rem 0.5rem 2rem ;
+				padding: 2rem 2rem 2rem 2rem ;
 			}
 
 		}
@@ -3591,18 +3595,28 @@ input, select, textarea {
 					justify-content: center;
 					width: 100%;
 					max-width: 100%;
+					height: 50% !important;
 				}
 
 				.banner.style1 .image {
 					width: 100%;
 					max-width: 100%;
 					height: 45vh;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.banner.style1 .image img {
+					width: 75% !important;
+					padding: 2rem;
+					position: relative;
 				}
 
 		}
 
 		.banner.style1.fullscreen {
-			min-height: 100vh;
+			max-height: 100vh;
 		}
 
 			@media screen and (orientation: portrait) {
@@ -8691,7 +8705,8 @@ input, select, textarea {
 		.bio-content {
 			display: flex;
 			flex-direction: column;
-			max-height: 100vh;
+			height: 100vh;
+			overflow: scroll;
 		}
 
 		.bio-content + .image {
