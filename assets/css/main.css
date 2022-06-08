@@ -5,6 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@0;1&display=swap');
+
 
 /*
 	Story by HTML5 UP
@@ -12,13 +20,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-}
-html {
-  height: -webkit-fill-available;
-}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -4359,6 +4360,14 @@ input, select, textarea {
 				padding: 4rem 4rem 2rem 4rem ;
 			}
 
+			.mobile-landing-pic {
+				visibility: visible !important;
+			}
+
+			.desktop-landing-pic {
+				visibility: hidden;
+			}
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -8662,7 +8671,7 @@ input, select, textarea {
 
 		.nav-links {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			font-size: 1.25em;
 			margin: 0;
 			padding: 0;
@@ -8676,6 +8685,7 @@ input, select, textarea {
 		.nav-links a {
 			text-decoration: none;
 			color: lightyellow;
+			text-shadow: 0px 0px 5px black;
 		}
 
 		.landing-name h1 {
@@ -8686,6 +8696,7 @@ input, select, textarea {
 			font-family: "Rubik";
 			color: lightyellow;
 			font-weight: 300;
+			text-shadow: 0px 0px 5px black;
 		}
 
 		.mobile-landing-pic {
@@ -8740,14 +8751,27 @@ input, select, textarea {
 					}
 		
 					.nav-links a {
-						font-size: 1.5rem;
+						font-size: 1.25rem;
 					}
 		
 					.landing-name h1 {
-						font-size: 3rem;
+						font-size: 2.75rem;
+						letter-spacing: .1em;
+						line-height: 1.5em;
+
 					}
 
 					.home-button {
 						bottom: 0;
 					}
 				}
+
+				body {
+					min-height: 100vh;
+					min-height: fill-available;
+					min-height: -webkit-fill-available;
+			}
+			html {
+					height: fill-available;
+					height: -webkit-fill-available;
+			}
