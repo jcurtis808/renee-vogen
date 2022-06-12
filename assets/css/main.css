@@ -4349,7 +4349,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.banner.style5 {
-				padding: 3rem;
+				padding: 4rem;
 			}
 
 		}
@@ -4378,6 +4378,7 @@ input, select, textarea {
 
 			.mobile-landing-pic {
 				visibility: visible !important;
+				/* object-position: 10% 10% !important; */
 			}
 
 			.desktop-landing-pic {
@@ -4385,6 +4386,12 @@ input, select, textarea {
 			}
 
 
+		}
+
+		@media screen and (orientation: landscape) {
+			.mobile-landing-pic {
+				object-position: 10% 10% !important;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -8666,12 +8673,12 @@ input, select, textarea {
 		}
 
 		.nav {
-			width: 55%;
+			width: 50%;
 		}
 
 		.nav-links {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			font-size: 1.25em;
 			margin: 0;
 			padding: 0;
@@ -8684,25 +8691,27 @@ input, select, textarea {
 
 		.nav-links a {
 			text-decoration: none;
+			font-family: 'Nunito';
+			letter-spacing: .075em;
 			color: lightyellow;
-			text-shadow: 0px 0px 5px black;
+			/* text-shadow: 0px 0px 5px black; */
 		}
 
 		.landing-name h1 {
-			letter-spacing: .15em;
+			letter-spacing: .1em;
 			font-size: 6vw;
 			max-width: 55%;
-			margin: 4rem 0;
+			margin: 5rem 0;
 			font-family: "Rubik";
 			color: lightyellow;
 			font-weight: 300;
-			text-shadow: 0px 0px 5px black;
+			/* text-shadow: 0px 0px 5px black; */
 		}
 
 		.mobile-landing-pic {
 			visibility: hidden;
 		}
-
+/* 
 		#r2 {
 			font-family: 'Nunito';
 			font-weight: 300;
@@ -8731,7 +8740,7 @@ input, select, textarea {
 		.bio-pic {
 			height: 100%;
 		}
-		
+		 */
 		
 		@media screen and (max-width: 1280px) {
 			
@@ -8757,7 +8766,7 @@ input, select, textarea {
 					.landing-name h1 {
 						font-size: 2.75rem;
 						letter-spacing: .1em;
-						line-height: 1.5em;
+						line-height: 2em;
 
 					}
 
