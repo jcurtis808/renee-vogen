@@ -3580,15 +3580,24 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			.socials-nav {
+				visibility: hidden;
+			}
+
+			.nav {
+				display: block !important;
+
+			}
+
 				.banner.style1 .content {
 					display: -moz-flex;
 					display: -webkit-flex;
 					display: -ms-flex;
 					display: flex;
-					-moz-flex-direction: column;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
+					-moz-flex-direction: column-reverse;
+					-webkit-flex-direction: column-reverse;
+					-ms-flex-direction: column-reverse;
+					flex-direction: column-reverse;
 					-moz-justify-content: center;
 					-webkit-justify-content: center;
 					-ms-justify-content: center;
@@ -3596,6 +3605,8 @@ input, select, textarea {
 					width: 100%;
 					max-width: 100%;
 					height: 50% !important;
+					border-radius: 50px;
+					box-shadow: 0px 0px 50px lightgrey;
 				}
 
 				.banner.style1 .image {
@@ -3608,15 +3619,20 @@ input, select, textarea {
 				}
 
 				.banner.style1 .image img {
-					width: 75% !important;
-					padding: 2rem;
+					width: 100% !important;
+					padding: 1rem;
 					position: relative;
+					border-radius: 50px;
+				}
+
+				.bio-main {
+					overflow: scroll;
 				}
 
 		}
 
 		.banner.style1.fullscreen {
-			max-height: 100vh;
+			max-height: -webkit-fill-available;
 		}
 
 			@media screen and (orientation: portrait) {
@@ -3641,10 +3657,11 @@ input, select, textarea {
 			@media screen and (orientation: portrait) {
 
 				.banner.style1.orient-right {
-					-moz-flex-direction: column-reverse;
-					-webkit-flex-direction: column-reverse;
-					-ms-flex-direction: column-reverse;
-					flex-direction: column-reverse;
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					padding: 1em;
 				}
 
 			}
@@ -4420,7 +4437,7 @@ input, select, textarea {
 		}
 
 	.banner .image {
-		background-color: rgba(0, 0, 0, 0.125);
+		/* background-color: rgba(0, 0, 0, 0.125); */
 	}
 
 	.banner.invert .image {
@@ -8656,15 +8673,16 @@ input, select, textarea {
 		}
 
 		.nav {
-			width: 55%;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		.nav-links {
 			display: flex;
 			justify-content: space-between;
-			font-size: 1.25em;
+			font-size: 1em;
 			margin: 0;
-			padding: 0;
+			padding: 1em 2em;
 		}
 
 		.nav-links li {
@@ -8674,7 +8692,8 @@ input, select, textarea {
 
 		.nav-links a {
 			text-decoration: none;
-			color: lightyellow;
+			font-size:1em;
+			color: black;
 		}
 
 		.landing-name h1 {
@@ -8740,7 +8759,7 @@ input, select, textarea {
 					}
 		
 					.nav-links a {
-						font-size: 1.5rem;
+						font-size: 1.25rem;
 					}
 		
 					.landing-name h1 {
